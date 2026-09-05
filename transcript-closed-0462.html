@@ -1,0 +1,561 @@
+
+<!DOCTYPE html>
+
+<html lang="ar">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+>
+
+<title>
+    Transcript #462
+</title>
+
+<style>
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: #313338;
+    color: #dbdee1;
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+}
+
+.header {
+    background: #1e1f22;
+    padding: 25px;
+    text-align: center;
+    border-bottom:
+        1px solid #3f4147;
+}
+
+.header h1 {
+    margin: 0;
+    color: #ffffff;
+}
+
+.header p {
+    color: #b5bac1;
+    margin-bottom: 0;
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 25px;
+}
+
+.message {
+    display: flex;
+    gap: 14px;
+    padding: 12px 8px;
+    border-radius: 6px;
+}
+
+.message:hover {
+    background: #2e3035;
+}
+
+.avatar {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.message-body {
+    flex: 1;
+    min-width: 0;
+}
+
+.message-header {
+    margin-bottom: 5px;
+}
+
+.username {
+    color: #ffffff;
+    font-weight: bold;
+    margin-right: 6px;
+}
+
+.bot-tag {
+    background: #5865f2;
+    color: white;
+    font-size: 10px;
+    font-weight: bold;
+    border-radius: 3px;
+    padding: 2px 4px;
+    margin-right: 6px;
+}
+
+.date {
+    color: #949ba4;
+    font-size: 12px;
+}
+
+.content {
+    white-space: pre-wrap;
+    line-height: 1.5;
+    overflow-wrap: anywhere;
+}
+
+.content strong,
+.embed-description strong,
+.embed-title strong {
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.content u,
+.embed-description u {
+    text-decoration: underline;
+}
+
+.content em,
+.embed-description em {
+    font-style: italic;
+}
+
+.content s,
+.embed-description s {
+    text-decoration: line-through;
+}
+
+.inline-code {
+    background: #1e1f22;
+    color: #dbdee1;
+    border-radius: 3px;
+    padding: 2px 5px;
+    font-family:
+        Consolas,
+        monospace;
+    font-size: 0.9em;
+}
+
+.mention {
+    display: inline-block;
+
+    background:
+        rgba(
+            88,
+            101,
+            242,
+            0.3
+        );
+
+    color: #c9cdfb;
+    border-radius: 3px;
+    padding: 0 3px;
+    font-weight: 500;
+}
+
+.discord-emoji {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+    vertical-align: middle;
+}
+
+.discord-embed {
+    position: relative;
+    margin-top: 8px;
+    max-width: 520px;
+    background: #2b2d31;
+
+    border-left:
+        4px solid #5865f2;
+
+    border-radius: 4px;
+    padding: 12px;
+
+    display: flex;
+    gap: 12px;
+}
+
+.embed-content {
+    flex: 1;
+    min-width: 0;
+}
+
+.embed-author {
+    color: #dbdee1;
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+.embed-title {
+    color: #f2f3f5;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    white-space: pre-wrap;
+}
+
+.embed-description {
+    color: #dbdee1;
+    font-size: 14px;
+    line-height: 1.45;
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+}
+
+.embed-field {
+    margin-top: 10px;
+}
+
+.embed-field-name {
+    color: #f2f3f5;
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 3px;
+}
+
+.embed-field-value {
+    color: #dbdee1;
+    font-size: 14px;
+    white-space: pre-wrap;
+}
+
+.embed-footer {
+    margin-top: 10px;
+    color: #b5bac1;
+    font-size: 12px;
+}
+
+.embed-image {
+    display: block;
+    max-width: 100%;
+    max-height: 400px;
+    border-radius: 4px;
+    margin-top: 12px;
+}
+
+.embed-thumbnail {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 4px;
+    order: 2;
+}
+
+.attachment {
+    margin-top: 10px;
+}
+
+.attachment a {
+    color: #00a8fc;
+    text-decoration: none;
+}
+
+.attachment a:hover {
+    text-decoration: underline;
+}
+
+.attachment-image {
+    display: block;
+    max-width: 450px;
+    max-height: 400px;
+    border-radius: 6px;
+}
+
+.empty-message {
+    color: #949ba4;
+    font-style: italic;
+}
+
+.footer {
+    text-align: center;
+    color: #949ba4;
+    padding: 30px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="header">
+
+    <h1>
+        𝐕𝐈𝐒𝐈𝐎𝐍・𝙎𝙏𝙊𝙍𝙀
+    </h1>
+
+    <p>
+        Ticket #462
+    </p>
+
+</div>
+
+<div class="container">
+
+    
+            <div class="message">
+
+                <img
+                    class="avatar"
+                    src="https://cdn.discordapp.com/avatars/1545027157154332754/c1d291bdeeea80dd2a2262078ca8a85e.webp?size=128"
+                    alt="avatar"
+                >
+
+                <div class="message-body">
+
+                    <div class="message-header">
+
+                        <span class="username">
+                            𝐕𝐈𝐒𝐈𝐎𝐍 𝑺𝒚𝒔𝒕𝒆𝒎
+                        </span>
+
+                        
+                                <span class="bot-tag">
+                                    BOT
+                                </span>
+                                
+
+                        <span class="date">
+                            9/5/2026, 8:40:14 PM
+                        </span>
+
+                    </div>
+
+                    
+                            <div class="content">
+                                <img class="discord-emoji" src="https://cdn.discordapp.com/emojis/1545084331721105528.webp?size=64&quality=lossless" alt=":vvv:" title=":vvv:">  𝐕𝐈𝐒𝐈𝐎𝐍・𝙎𝙏𝙊𝙍𝙀
+<img class="discord-emoji" src="https://cdn.discordapp.com/emojis/1545085023353573416.gif?size=64&quality=lossless" alt=":LLL:" title=":LLL:">  <span class="mention">@متهور القصيمي ٩  🗲 MTHOR  9</span> <strong>نرحب بك في الدعم الفني تم استلام تذكرتك، وسوف يتم الرد عليك في أقرب وقت ممكن</strong>
+<img class="discord-emoji" src="https://cdn.discordapp.com/emojis/1545085480096235610.gif?size=64&quality=lossless" alt=":EEE:" title=":EEE:"> | <span class="mention">@⍣〢𝐒𝐭𝐨𝐫𝐞 𝐒𝐮𝐩𝐩𝐨𝐫𝐭 ♡.</span>
+                            </div>
+                            
+
+                    
+        <div
+            class="discord-embed"
+            style="border-left-color:#00ff88;"
+        >
+            
+
+            <div class="embed-content">
+
+                
+
+                
+
+                
+                        <div class="embed-description">
+                            📄 <u>يرجى قراءة قوانين المتجر قبل شراء اي سلعة</u>
+🔗 <span class="mention">#┠▸⛔〡𝐬𝐭𝐨𝐫𝐞・𝐫𝐮𝐥𝐞𝐬</span>
+
+🔴 <strong>يرجى عدم عمل سبام وانتظار الرد من قبل المسؤولين</strong>
+                        </div>
+                        
+
+                
+                
+                
+            <div class="embed-footer">
+                TicketSystem - 𝐕𝐈𝐒𝐈𝐎𝐍 𝑺𝒚𝒔𝒕𝒆𝒎 ♡
+            </div>
+        
+
+            </div>
+
+        </div>
+    
+                    
+
+                    
+
+                </div>
+
+            </div>
+        
+            <div class="message">
+
+                <img
+                    class="avatar"
+                    src="https://cdn.discordapp.com/avatars/1224727957302411285/ddb8f14a1238641efe17fec943e9ce25.webp?size=128"
+                    alt="avatar"
+                >
+
+                <div class="message-body">
+
+                    <div class="message-header">
+
+                        <span class="username">
+                            بعيوني FOR ME
+                        </span>
+
+                        
+
+                        <span class="date">
+                            9/5/2026, 8:40:29 PM
+                        </span>
+
+                    </div>
+
+                    
+                            <div class="content">
+                                سم
+                            </div>
+                            
+
+                    
+                    
+
+                    
+
+                </div>
+
+            </div>
+        
+            <div class="message">
+
+                <img
+                    class="avatar"
+                    src="https://cdn.discordapp.com/avatars/1545027157154332754/c1d291bdeeea80dd2a2262078ca8a85e.webp?size=128"
+                    alt="avatar"
+                >
+
+                <div class="message-body">
+
+                    <div class="message-header">
+
+                        <span class="username">
+                            𝐕𝐈𝐒𝐈𝐎𝐍 𝑺𝒚𝒔𝒕𝒆𝒎
+                        </span>
+
+                        
+                                <span class="bot-tag">
+                                    BOT
+                                </span>
+                                
+
+                        <span class="date">
+                            9/5/2026, 8:40:38 PM
+                        </span>
+
+                    </div>
+
+                    
+
+                    
+        <div
+            class="discord-embed"
+            style="border-left-color:#ffff00;"
+        >
+            
+
+            <div class="embed-content">
+
+                
+
+                
+
+                
+                        <div class="embed-description">
+                            Ticket Closed by <span class="mention">@متهور القصيمي ٩  🗲 MTHOR  9</span>
+                        </div>
+                        
+
+                
+                
+                
+
+            </div>
+
+        </div>
+    
+                    
+
+                    
+
+                </div>
+
+            </div>
+        
+            <div class="message">
+
+                <img
+                    class="avatar"
+                    src="https://cdn.discordapp.com/avatars/1545027157154332754/c1d291bdeeea80dd2a2262078ca8a85e.webp?size=128"
+                    alt="avatar"
+                >
+
+                <div class="message-body">
+
+                    <div class="message-header">
+
+                        <span class="username">
+                            𝐕𝐈𝐒𝐈𝐎𝐍 𝑺𝒚𝒔𝒕𝒆𝒎
+                        </span>
+
+                        
+                                <span class="bot-tag">
+                                    BOT
+                                </span>
+                                
+
+                        <span class="date">
+                            9/5/2026, 8:40:38 PM
+                        </span>
+
+                    </div>
+
+                    
+
+                    
+        <div
+            class="discord-embed"
+            style="border-left-color:#5865f2;"
+        >
+            
+
+            <div class="embed-content">
+
+                
+
+                
+
+                
+                        <div class="embed-description">
+                            <code class="inline-code">Support team ticket controls</code>
+                        </div>
+                        
+
+                
+                
+                
+
+            </div>
+
+        </div>
+    
+                    
+
+                    
+
+                </div>
+
+            </div>
+        
+
+</div>
+
+<div class="footer">
+    VISION System • Ticket Transcript
+</div>
+
+</body>
+
+</html>
